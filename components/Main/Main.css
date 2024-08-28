@@ -22,7 +22,7 @@
 
 @media screen and (max-width: 500px) {
   .welcome-message {
-    gap: 20px;
+    gap: 10px;
   }
 
   .welcome-message > p {
@@ -32,6 +32,6 @@
   }
 
   .welcome-message > img {
-    width: 350px;
+    width: 300px;
   }
 }

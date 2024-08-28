@@ -34,14 +34,15 @@ header li {
 
 @media screen and (max-width: 500px) {
   header {
-    height: 130px;
+    height: 90px;
   }
   .logo {
     height: 25px;
   }
 
   header ul {
-    padding: 15px;
+    font-size: 14px;
+    padding: 7px;
     gap: 30px;
   }
 }

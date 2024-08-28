@@ -154,9 +154,13 @@ p {
   }
 
   .details p {
-    font-size: 14px;
-    height: 40px;
-    padding-right: 20px;
+    font-size: 12px;
+    height: 30px;
+    padding-right: 30px;
     border-right: none;
+  }
+
+  .details button {
+    font-size: 12px;
   }
 }
