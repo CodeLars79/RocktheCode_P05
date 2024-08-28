@@ -1,0 +1,93 @@
+.tictactoe-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  grid-gap: 20px;
+  padding: 22px;
+  width: 450px;
+  background: var(--text2);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.cell {
+  width: 125px;
+  height: 125px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.xo-img {
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+}
+
+.cell:hover {
+  background-color: #f1f1f1;
+}
+
+#reset {
+  text-align: center;
+  margin: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  color: var(--text);
+  font-family: 'Chakra Petch', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 1px;
+  border-radius: 7px;
+  padding: 10px 45px;
+  background: var(--text2);
+  border: none;
+  transition: 0.3s ease;
+}
+
+#reset:hover {
+  color: var(--text2);
+  background: var(--text);
+}
+
+#message {
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 500px) {
+  #board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    padding: 16px;
+    width: 350px;
+  }
+
+  .cell {
+    width: 100px;
+    height: 100px;
+  }
+
+  #reset {
+    margin: 15px;
+  }
+  #message {
+    margin-top: 0;
+    font-size: 20px;
+  }
+}

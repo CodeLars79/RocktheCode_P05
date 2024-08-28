@@ -1,0 +1,47 @@
+header {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.header-container {
+  text-align: center;
+}
+
+.logo {
+  height: 35px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.logo:hover {
+  opacity: 0.5;
+}
+
+header ul {
+  list-style-type: none;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+header li {
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    height: 130px;
+  }
+  .logo {
+    height: 25px;
+  }
+
+  header ul {
+    padding: 15px;
+    gap: 30px;
+  }
+}
