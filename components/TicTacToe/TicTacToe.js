@@ -111,7 +111,8 @@ export const initializeTicTacToe = () => {
     }
 
     if (roundWon) {
-      message.textContent = `Player ${currentPlayer} wins!`
+      const imgPath = currentPlayer === 'X' ? imgX : imgO
+      message.innerHTML = `<img src="${imgPath}" alt="${currentPlayer}" class="xo-img"> wins!`
       isGameActive = false
       localStorage.setItem('isGameActive', isGameActive)
       return
